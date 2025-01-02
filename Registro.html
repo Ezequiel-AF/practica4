@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro</h1>
+    </header>
+    <nav>
+        <div class="barra">
+            <a href="./index.html">Inicio</a>
+        </div>
+        <div class="barra">
+            <a href="./Noticias.html">Noticias</a>
+        </div>
+        <div class="barra">
+            <a href="./Enlaces.html">Enlaces</a>
+        </div>
+        <div class="barra"><a href="./Galeria.html">Galeria</a>
+        </div>
+        <div class="barra">
+            <a href="./Registro.html">Registro</a>
+        </div>  
+     </nav>
+
+     <main>
+        <section class="registro">
+            <h2>Rellene el formulario para registrarse</h2>
+            <form action="Registro.html" method="post" name="registro">
+                 <label for="Name">Nombre</label>
+                 <input type="text" name="Name" placeholder="Nombre y Apellido" maxlength="50" required>
+                 
+                 <label for="Adrees">Direccion</label>
+                 <input type="text" name="Adrees" placeholder="Direccion" required>
+
+                 <label for="Movil">Telefono de contacto</label>
+                 <input type="tel" name="Movil" placeholder="Telefono" required>
+
+                 <label for="Age">Edad</label>
+                 <input type="date" name="Age" placeholder="Fecha de nacimiento" required>
+
+                 <label for="Email">E-mail</label>
+                 <input type="email" name="Email" placeholder="Direccion@correo.com" required>
+
+                 <input type="reset" name="Boton" value="Reset" class="buton">
+                 <input type="submit" name="Boton" value="enviar" class="buton" >
+                 
+
+            </form>
+        </section>
+     </main>
+     <footer>
+        <p>Los derechos de esta pagina son reservados hacia mi persona</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-size:100% auto;
+    
+}
+
+header{
+    text-align: center;
+    border: 2px solid black;
+}
+
+header img{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.barra{
+    background-color: rgb(25, 134, 223);
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    width: 110px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 1);
+}
+
+.barra a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.barra a:hover{
+    color: black;
+}
+
+/***************MAIN****************/
+article{
+    border: 2px solid black;
+    padding: 30px;
+}
+.contenedor{
+    display: flex;
+}
+
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido{
+    text-align: justify;
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 5px 0px;
+}
+
+/******************FORMULARIO****************/
+.registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 80vh;
+    
+}
+
+.registro h2{
+    padding: 20px;
+    margin: 20px;
+}
+
+.registro form{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 15px;
+    width: 50%;
+    background-color:  rgb(25, 134, 223);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 5px rgb(0, 0, 1);
+}
+
+.registro form label{
+    padding: 5px;
+    margin: 5px 0;
+    color: white;
+}
+
+.registro form input{
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.buton{
+    cursor: pointer;
+}
+
+/****************************Noticia**********************/
+
+.contenedor-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/***************************Enlaces************************/
+.contenedor-columnreverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.contenedor1-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+/*****************************Galeria************************/
+
+.foto-contenedor{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(2, auto); 
+}
+
+.contenido-galeria{
+    text-align: center;
+}
